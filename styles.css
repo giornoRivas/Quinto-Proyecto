@@ -20,17 +20,18 @@
 }
 header {
   width: 100%;
-  height: 1672px;
+  height: auto;
   background-image: url(../assets/MG.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 64px 0 0 0;
 }
 header .header-container {
   display: flex;
   width: 90%;
   height: 40px;
-  margin: 64px auto 105px auto;
+  margin: 0 auto;
 }
 header .header-container .header-logo {
   display: flex;
@@ -64,6 +65,7 @@ header .header-title-container {
   width: 90%;
   height: 1000px;
   margin: 0 auto;
+  padding-top: 104px;
 }
 header .header-title-container .social {
   display: flex;
@@ -93,14 +95,150 @@ header .header-title-container .slider {
 }
 header .header-title-container .slider span {
   display: flex;
+  height: 60px;
   justify-content: flex-end;
+  align-items: center;
+  padding-right: 24px;
   font-size: 1.8rem;
   font-weight: 700;
+  border-right: 3px solid rgba(11, 29, 38, 0.5);
+}
+header .header-title-container .slider span a {
+  text-decoration: none;
+  color: #0B1D26;
+}
+header .header-title-container .slider .inicio {
+  border-right: 3px solid #0b1d26;
 }
 header .header-gradient {
-  width: 100%;
   height: 700px;
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+
+main {
+  width: 100%;
+  height: 2250px;
+  position: relative;
+  background-color: #0B1D26;
+}
+main .main-contents {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  bottom: 400px;
+  width: 80%;
+  height: 920px;
+}
+main .main-contents .text-container {
+  width: 60%;
+  position: relative;
+}
+main .main-contents .text-container .text {
+  display: flex;
+  flex-direction: column;
+  margin: 145px 114px 144.5px 150px;
+  width: 632px;
+  height: 430px;
+}
+main .main-contents .text-container .text .main-contents-number {
+  position: absolute;
+  line-height: 27rem;
+  top: 0px;
+  left: 0px;
+  width: 247px;
+  height: 240px;
+  font-weight: 700;
+  font-size: 24rem;
+  opacity: 10%;
+  color: #FFFFFF;
+}
+main .main-contents .text-container .text h3 {
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 9.6rem;
+  color: #FFFFFF;
+}
+main .main-contents .text-container .text .main-contents-text {
+  padding-top: 27px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #FFFFFF;
+}
+main .main-contents .text-container .text a {
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #FDD130;
+  text-decoration: none;
+}
+main .main-contents .text-container .text a .arrow {
+  display: inline-block;
+  width: 16px;
+  height: 24px;
+  margin-left: 16px;
+  vertical-align: bottom;
+  background-image: url(../assets/arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .main-contents .img {
+  width: 40%;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #0B1D26;
+  padding: 100px 0px 20px 0;
+}
+footer .footer-container {
+  display: flex;
+  width: 80%;
+  height: 280px;
+  margin: 0 auto;
+}
+footer .footer-container .copy {
+  width: 60%;
+}
+footer .footer-container .copy p {
+  opacity: 50%;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #FFFFFF;
+}
+footer .footer-container .opciones {
+  display: flex;
+  width: 40%;
+}
+footer .footer-container .opciones .servicio-cliente {
+  width: 50%;
+}
+footer .footer-container .opciones .servicio-cliente p {
+  padding-left: 5px;
+  padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #FDD130;
+}
+footer .footer-container .opciones .servicio-cliente ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .opciones .servicio-cliente ul li {
+  list-style-type: none;
+  padding: 8px;
+}
+footer .footer-container .opciones .servicio-cliente ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+footer .footer-container .opciones .acerca-de {
+  margin-left: 158px;
 }
 
 * {

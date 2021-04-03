@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: v.$bg;
+    padding: 100px 0px 20px 0;
+    .footer-container{
+        display: flex;
+        width: 80%;
+        height: 280px;
+        margin: 0 auto;
+        .copy{
+            width: 60%;
+            p{
+                opacity: 50%;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 3.2rem;
+                color: v.$white;
+            }
+        }
+        .opciones{
+            display: flex;
+            width: 40%;
+            .servicio-cliente{
+                width: 50%;
+                p{
+                    padding-left: 5px;
+                    padding-bottom: 8px;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    color: v.$accent;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    li{
+                        list-style-type: none;
+                        padding: 8px;
+                        a{
+                            text-decoration: none;
+                            color: v.$white;
+                            font-weight: 500;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            .acerca-de{
+                margin-left: 158px;
+            }
+            
+
+        }
+    }
+}
